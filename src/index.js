@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // document.createTag('div) div.innerText = hola mundo
+import ReactDOM from 'react-dom'; // document.getElementById('root') container.appendChild()
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
