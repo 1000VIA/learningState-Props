@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+  <button id='button' >pintar</button>
+</body>
+<script>
+
+    const section = document.createElement('section')
+
+    const name = document.createElement('h2')
+    name.innerHTML = 'Dulce'
+    const lastname = document.createElement('h2')
+    lastname.innerHTML = 'Maria'
+    const email = document.createElement('h2')
+    email.innerHTML = 'example.com'
+
+    section.appendChild(name)
+    section.appendChild(lastname)
+    section.appendChild(email)
+
+    const container = document.getElementById('app')
+    container.appendChild(section)
+
+    const button = document.getElementById('button')
+
+    button.addEventListener('click', (ev) => {
+      name.innerHTML = 'Helen'
+      lastname.innerHTML = 'Osman'
+      email.innerHTML = 'hola.com'
+    })
+
+</script>
+</html>
